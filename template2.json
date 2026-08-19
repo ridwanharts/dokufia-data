@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "id": "tpl_002",
+    "version": 1,
+    "name": "Surat Resmi dengan Border",
+    "category": "Administrative",
+    "description": "Template surat resmi dengan border kotak, padding 3cm, dan header nama sekolah + alamat + logo.",
+    "author": "DokuFia Team",
+    "thumbnailUrl": ""
+  },
+  "pages": [
+    {
+      "width": 210,
+      "height": 297,
+      "elements": [
+        {
+          "id": "outer_border",
+          "type": "shape",
+          "shapeType": "rect",
+          "x": 30,
+          "y": 30,
+          "width": 150,
+          "height": 237,
+          "zIndex": 0,
+          "strokeColor": "#000000",
+          "strokeWidth": 1.2,
+          "fillColor": ""
+        },
+        {
+          "id": "school_logo",
+          "type": "image",
+          "x": 35,
+          "y": 35,
+          "width": 16,
+          "height": 16,
+          "zIndex": 1,
+          "assetId": "school_logo"
+        },
+        {
+          "id": "school_name",
+          "type": "text",
+          "x": 55,
+          "y": 36,
+          "width": 120,
+          "height": 8,
+          "zIndex": 1,
+          "content": "${schoolName}",
+          "color": "#000000",
+          "fontSize": 12,
+          "textAlign": "left"
+        },
+        {
+          "id": "school_address",
+          "type": "text",
+          "x": 55,
+          "y": 44,
+          "width": 120,
+          "height": 6,
+          "zIndex": 1,
+          "content": "${schoolAddress}",
+          "color": "#000000",
+          "fontSize": 8,
+          "textAlign": "left"
+        },
+        {
+          "id": "header_separator",
+          "type": "shape",
+          "shapeType": "rect",
+          "x": 35,
+          "y": 55,
+          "width": 140,
+          "height": 0.5,
+          "zIndex": 1,
+          "strokeColor": "#000000",
+          "strokeWidth": 0.7,
+          "fillColor": ""
+        },
+        {
+          "id": "document_title",
+          "type": "text",
+          "x": 35,
+          "y": 62,
+          "width": 140,
+          "height": 8,
+          "zIndex": 2,
+          "content": "${documentTitle}",
+          "color": "#000000",
+          "fontSize": 13,
+          "textAlign": "center"
+        },
+        {
+          "id": "content_body",
+          "type": "text",
+          "x": 38,
+          "y": 75,
+          "width": 134,
+          "height": 180,
+          "zIndex": 2,
+          "content": "${content}",
+          "color": "#000000",
+          "fontSize": 10,
+          "textAlign": "left"
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "schoolName",
+      "type": "text",
+      "label": "Nama Sekolah",
+      "hint": "Nama lengkap sekolah",
+      "defaultValue": "SD Negeri 01",
+      "required": true
+    },
+    {
+      "id": "schoolAddress",
+      "type": "text",
+      "label": "Alamat Sekolah",
+      "hint": "Alamat lengkap sekolah",
+      "defaultValue": "Jl. Pendidikan No. 1, Kota",
+      "required": true
+    },
+    {
+      "id": "documentTitle",
+      "type": "text",
+      "label": "Judul Dokumen",
+      "hint": "Contoh: SURAT KETERANGAN",
+      "defaultValue": "SURAT KETERANGAN",
+      "required": true
+    },
+    {
+      "id": "content",
+      "type": "text",
+      "label": "Isi Dokumen",
+      "hint": "Tulis isi dokumen di sini",
+      "defaultValue": "Dengan ini menerangkan bahwa...",
+      "required": false
+    }
+  ],
+  "assets": [
+    {
+      "id": "school_logo",
+      "type": "image",
+      "url": ""
+    }
+  ]
+}
