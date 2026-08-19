@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "id": "tpl_001",
+    "version": 1,
+    "name": "Math Worksheet Basic",
+    "category": "Education",
+    "description": "A simple addition worksheet for primary students.",
+    "author": "DokuFia Team",
+    "thumbnailUrl": ""
+  },
+  "pages": [
+    {
+      "width": 210,
+      "height": 297,
+      "elements": [
+        {
+          "id": "school_logo",
+          "type": "image",
+          "x": 5,
+          "y": 5,
+          "width": 20,
+          "height": 20,
+          "zIndex": 0,
+          "assetId": "school_logo_placeholder"
+        },
+        {
+          "id": "header_text",
+          "type": "text",
+          "x": 5,
+          "y": 25,
+          "width": 200,
+          "height": 10,
+          "zIndex": 1,
+          "content": "Addition Practice",
+          "color": "#000000",
+          "fontSize": 24,
+          "textAlign": "center"
+        },
+        {
+          "id": "student_name_label",
+          "type": "text",
+          "x": 20,
+          "y": 45,
+          "width": 100,
+          "height": 5,
+          "zIndex": 1,
+          "content": "Student Name: ${studentName}",
+          "color": "#000000",
+          "fontSize": 12
+        },
+        {
+          "id": "divider_line",
+          "type": "shape",
+          "shapeType": "rect",
+          "x": 20,
+          "y": 55,
+          "width": 170,
+          "height": 1,
+          "zIndex": 1,
+          "color": "#CCCCCC"
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "studentName",
+      "type": "text",
+      "label": "Student Name",
+      "hint": "Enter student full name",
+      "defaultValue": "John Doe",
+      "required": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "school_logo_placeholder",
+      "type": "image",
+      "url": ""
+    }
+  ]
+}
